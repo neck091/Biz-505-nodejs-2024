@@ -1,0 +1,14 @@
+form {
+  width: 50%;
+  margin: 20px auto;
+}
+
+form div {
+  width: 80%;
+  margin: 4px auto;
+}
+
+form input {
+  padding: 6px;
+  border: 1px solid #aaa;
+}
