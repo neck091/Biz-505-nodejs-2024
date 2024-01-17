@@ -1,0 +1,60 @@
+.student {
+  width: 80%;
+  margin: 5px auto;
+}
+
+form.student {
+  border: 1px solid #aaa;
+  padding: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5), 0 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+h3.student {
+  padding: 1.1rem;
+  border-radius: 15px;
+  box-shadow: 1px 1px 1px black;
+  text-align: center;
+}
+
+form.student input {
+  width: 90%;
+  margin: 0 auto;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+form.student input,
+form.student button {
+  /* 인풋태그와 버튼태그를 세로로 배치하기 위해*/
+  display: block;
+  width: 70%;
+  margin: 5px auto;
+  padding: 8px;
+  border-radius: 10px;
+  text-align: center;
+  outline: none;
+}
+
+form.student input:hover {
+  background-color: #eee;
+}
+
+form.student input:focus {
+  border: aqua;
+}
+
+form.student button {
+  background-color: #00bbff;
+}
+
+form.student button:hover {
+  border: aqua;
+}
+
+div.student.error {
+  width: 60%;
+  margin: 0 auto;
+  color: red;
+}

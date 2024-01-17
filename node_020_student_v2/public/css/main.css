@@ -1,8 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  padding: 12px 16px;
+  margin: 0 auto;
+  text-decoration: none;
+  color: inherit;
+}
+
+nav.main a {
+  display: inline-block;
+  padding: 12px 16px;
+  margin: 5px;
+  border: 3px solid transparent;
+  transition: 0.7s;
+}
+
+nav.main {
+  margin: 0 auto;
+}
+
+nav.main ul {
+  display: flex;
+  justify-content: right;
+  list-style: none;
+}
+
+nav.main ul a:hover {
+  border-bottom: 3px solid rgb(0, 255, 8);
 }
