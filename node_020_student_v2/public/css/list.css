@@ -18,6 +18,15 @@ th {
   padding: 10px;
 }
 
+tr:hover {
+  cursor: pointer;
+  background-color: #ddd;
+}
+
+tr:nth-of-type(odd) {
+  background-color: #eee;
+}
+
 th:nth-last-of-type(1),
 tr:nth-last-of-type(1) {
   border-right: none;

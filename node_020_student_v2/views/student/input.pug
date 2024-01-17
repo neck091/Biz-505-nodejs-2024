@@ -1,9 +1,12 @@
 extends ../layout
 
 block content
+
     link(rel="stylesheet", href="/css/input.css")
-    script(src="/js/input.js");
+    script(src="/js/input.js")
+
     h3.student 학생정보 추가 
+
     form.student.input(method="POST")
         input#st_num(name="st_num", placeholder="학번을 입력하세요")
         div.student.error.st_num
