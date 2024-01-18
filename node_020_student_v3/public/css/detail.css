@@ -1,0 +1,52 @@
+h3.student {
+  width: 50%;
+  margin: 0 auto;
+}
+
+div {
+  display: flex;
+  border: #ccc;
+}
+
+strong {
+  flex: 1;
+  background-color: #ddd;
+  padding: 5px;
+  text-align: right;
+}
+
+span {
+  flex: 3;
+  background-color: #eee;
+  padding: 5px;
+}
+
+div.btn_box {
+  display: flex;
+  border: none;
+  justify-content: right;
+}
+
+div.btn_box button {
+  margin: 10px 0 10px 10px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+button.btn_list {
+  background-color: green;
+}
+button.btn_update {
+  background-color: rgb(255, 0, 0);
+}
+button.btn_delete {
+  background-color: blue;
+}
+
+div.btn_box button:hover {
+  opacity: 5%;
+}
