@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+header {
+  margin: 0 4px;
+
+  height: 100px;
+  background-color: rgb(114, 159, 171);
+
+  justify-content: center;
+  display: flex;
+}
+
+h1 {
+  margin: 20px;
+  padding: 10px;
+}
+
+nav {
+  border: 3px solid white;
+  background-color: dodgerblue;
+  border-radius: 10px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li:nth-last-of-type(1) {
+  margin-left: auto;
+}
+
+li {
+  display: inline-block;
+  padding: 8px 5px;
+  margin-left: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}

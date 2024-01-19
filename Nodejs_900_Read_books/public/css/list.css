@@ -1,0 +1,38 @@
+table {
+  width: 80%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  font-weight: 900;
+}
+th {
+  background-color: rgb(230, 230, 230);
+}
+td,
+th {
+  border: 1px solid black;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+  padding: 8px;
+  cursor: pointer;
+}
+
+tbody tr:nth-of-type(odd) {
+  background-color: rgb(255, 255, 255);
+}
+
+div.btn {
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px 0;
+  background-color: none;
+  text-align: right;
+}
+
+div.btn a {
+  padding: 5px;
+  display: inline-block;
+  background-color: gray;
+  color: white;
+  font-weight: 900;
+}

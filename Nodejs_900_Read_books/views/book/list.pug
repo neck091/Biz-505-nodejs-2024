@@ -1,0 +1,32 @@
+extends ../layout
+
+block content
+    link(rel="stylesheet", href="/css/list.css")
+    table
+      thead 
+        tr
+          th
+            strong No. 
+          th
+            strong ISBN
+          th
+            strong 도서명
+          th
+            strong 저자
+          th
+            strong 출판사 
+          th
+            strong 가격
+          th
+            strong 할인가
+      each item,index in bList
+        tr  
+          td #{index+1}
+          td= item.isbn
+          td= item.title
+          td= item.author 
+          td= item.publisher 
+          td= item.price 
+          td= item.discount
+    div.btn
+       a(href="/book/insert") 도서등록
