@@ -1,4 +1,8 @@
-import mysql from "mysql/promise";
+import mysql from "mysql2/promise";
+/**
+ * db접속 정보를 다시 설정하고
+ * 이 파일을 mysql.js 로 이름변경 후 프로젝트를 실행 할 것
+ */
 const mysql_info = {
   host: "localhost",
   port: "3306",

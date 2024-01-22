@@ -13,7 +13,7 @@
 
 ## express 프로젝트 생성 도구 설치
 
-- `npm install -g express-21c `
+- `npm install -g express-21c`
 
 ## express 프로젝트 생성도구 업그레이드
 
