@@ -1,0 +1,37 @@
+/* books 폴더 안에 있는 main pug css임*/
+
+section.books {
+  flex: 1;
+  display: flex;
+}
+
+aside {
+  border: 1px solid blue;
+  flex: 1;
+  flex-direction: column;
+  padding-top: 50px;
+  background-color: #e5f1e5;
+
+  /*aside가 flex 이므로 a는 flex item 이 되고 line block 성질을 갖는다
+따라서 width가 적용이 됨*/
+  a {
+    width: 80%;
+    text-align: right;
+    margin: 10px auto;
+    border-bottom: 2px solid #aaa;
+    font-size: 1.2rem;
+    color: blue;
+    opacity: 0.5;
+    transition: 0.7s;
+    &:hover {
+      border-bottom: 2px solid #333;
+      opacity: 1;
+    }
+  }
+}
+
+article.body {
+  flex: 5;
+  border: 1px solid green;
+  height: 100%;
+}

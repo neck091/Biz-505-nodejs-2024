@@ -4,12 +4,16 @@ block content
     link(rel="stylesheet", href="/css/input.css")
     form(method="POST")
         input#isbn(name = "isbn" placeholder="ISBN")
-        div 
+        div.isbn.err
         input#title(name = "title" placeholder="도서명")
+        div.title.err
         input#publisher(name = "publisher" placeholder="출판사")
+        div.publisher.err
         input#author(name = "author" placeholder="저자")
+        div.author.err
         input#price(name = "price" placeholder="가격")
+        div.price.err
 
         button.btn_save 저장
-        button.btn_new 새로쓰기
-        button.btn_list 리스트
+       // button.btn_new 새로쓰기
+       // button.btn_list 리스트
