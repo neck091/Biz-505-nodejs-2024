@@ -94,4 +94,23 @@ DDL(data definition lang) : DBA(database administrator, 최고관리자)가 사�
 CREATE USER 'necktie'@'localhost' IDENTIFIED BY '!Biz8080'; 
 -- 하지만 새로 생성된 사용자는 아무런 권한이 없기 때문에 할 수 있는 일이 없음.
 
+SHOW DATABASES;
+/*
+정보보호의 2가지 구분
+보안 : 허가받지 않은 사용자가 시스템에 침투하여 시스템에 문제를 일으키는 행위 : 해킹
+무결성 : 허가받은 사용자 중에 권한이 잘못 부여되어 시스템(데이터)에 문제를 일으키는 행위
 
+무결성을 보장하기 위하여
+생성된 사용자에게 적절한 권한을 제한적으로 부여하여 여러 민감한 데이터의 손상, 
+변화(INSERT UPDATE DELETE)를 최소화 하여야한다
+*/
+
+-- necktie 사용자에게  bookDB2 데이터베이스에 대한 권한을 부여
+-- TABLE 생성, CRUD를 수행할 수 있다. 
+GRANT ALL PRIVILEGES ON bookDB2.* TO 'necktie'@'localhost';
+
+-- 기존에 부여된 권한 회수
+REVOKE ALL PRIVILEGES ON *.* FROM 'necktie'@'localhost';
+
+USE bookdb2;
+DROP TABLE tbl_bookstbl_bbd;
