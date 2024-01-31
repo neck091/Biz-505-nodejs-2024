@@ -12,16 +12,18 @@ form.join {
 
 form.join div {
   width: 80%;
-  margin: 3px auto;
+  margin: 5px auto;
   display: flex;
+  flex-direction: column;
 
   label,
   input {
+    display: inline-block;
     padding: 8px;
   }
   lable {
     flex: 1;
-    text-align: right;
+    text-align: center;
   }
   input {
     flex: 3;
