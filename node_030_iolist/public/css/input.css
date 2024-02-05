@@ -1,0 +1,39 @@
+form {
+  width: 80%;
+  margin: 0 auto;
+  fieldset,
+  legend {
+    margin: 0 auto;
+    color: aqua;
+  }
+}
+div {
+  width: 80%;
+  margin: 5px auto;
+  display: flex;
+  justify-content: center;
+  input,
+  button {
+    padding: 10px;
+    margin: 0 10px;
+    display: inline-block;
+    font-weight: 900;
+    width: 80%;
+    flex: 1;
+  }
+
+  button.input {
+    background-color: aquamarine;
+    border: none;
+  }
+  button {
+    background-color: rgb(255, 229, 127);
+    border: none;
+  }
+}
+div.image {
+  text-align: center;
+  img {
+    margin: 0 auto;
+  }
+}
