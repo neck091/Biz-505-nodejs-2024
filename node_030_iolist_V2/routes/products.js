@@ -1,5 +1,6 @@
 import express from "express";
 import DB from "../models/index.js";
+import { upLoad } from "../modules/file_upload.js";
 
 const PRODUCTS = DB.models.tbl_product;
 const IOLIST = DB.models.tbl_iolist;
@@ -37,14 +38,16 @@ router.get("/insert", (req, res) => {
   return res.render("product/input");
 });
 
-router.post("/insert", async (req, res) => {
-  const p_data = req.body;
-  try {
-    await PRODUCTS.create(p_data);
-    return res.redirect("product/list");
-  } catch (error) {
-    return res.json(error);
-  }
+router.post("/insert", upLoad.single("p_image"), (req, res) => {
+  const file = req.file;
+  return res.json({ body: req.body, file });
+  // const p_data = req.body;
+  // try {
+  //   PRODUCTS.create(p_data);
+  //   return res.redirect("product/list");
+  // } catch (error) {
+  //   return res.json(error);
+  // }
 });
 
 export default router;
