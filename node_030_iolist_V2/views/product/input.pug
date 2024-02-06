@@ -1,0 +1,21 @@
+extends ../layout
+
+block content 
+    link(rel="stylesheet", href="/css/input.css")
+    form(method="POST")
+        fieldset 
+            legend 상품입력
+            div.input
+                input(type="text" placeholder="상품코드")
+                input(type="text" placeholder="상품이름")
+            div.input 
+                input(type="text" placeholder="품목")
+                input(type="text" placeholder="규격")
+            div.input
+                input(type="text" placeholder="매입단가")
+                input(type="text" placeholder="매출단가")
+            div.image
+                img(src="dfdfds/dfs", alt="사진", srcset="")
+            div.btn_box
+                button.input(type="submit") 입력
+                button 취소

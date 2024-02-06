@@ -1,0 +1,73 @@
+article {
+  width: 50%;
+  margin: 5px auto;
+  text-align: center;
+}
+h2 {
+  border: 1px solid aqua;
+  width: 40%;
+  text-align: left;
+  padding: 12px 16px;
+  margin-top: 20px;
+  margin-bottom: 2px;
+}
+div.detail,
+div.btn {
+  border-radius: 10px;
+  display: flex;
+  div.img {
+    flex: 1;
+    display: inline-flexbox;
+    border: 1px solid black;
+  }
+  div {
+    flex: 4;
+    div {
+      width: 70%;
+      margin: 5px auto;
+      display: flex;
+
+      strong,
+      span {
+        width: 50%;
+        white-space: none;
+        padding: 8px;
+        margin: 3px auto;
+        border-radius: 10px;
+      }
+      strong {
+        width: 90px;
+        text-align: center;
+      }
+      span {
+        flex: 2;
+      }
+    }
+  }
+}
+
+button.update {
+  background-color: rgb(38, 255, 0);
+}
+button.delete {
+  background-color: orangered;
+}
+div.btn,
+div.p {
+  width: 50%;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: flex;
+
+  button {
+    flex: 1;
+    display: inline-block;
+    font-weight: 900;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 10px;
+  }
+}
+p {
+  margin: 15px auto;
+}

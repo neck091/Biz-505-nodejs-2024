@@ -1,0 +1,12 @@
+extends ../layout 
+block content 
+    link(rel="stylesheet", href="/css/login.css")
+    script(src="/js/login.js") 
+    form.login(method="POST")
+        div
+            input.login.password(type="password", placeholder="PASSWORD",
+            name="password")
+        div 
+            input.login.btn_login(type="button", value="인증")
+
+

@@ -1,0 +1,31 @@
+form.join {
+  width: 60%;
+  margin: 10px auto;
+
+  fieldset {
+    border-radius: 10px;
+  }
+  legend {
+    color: blue;
+  }
+}
+
+form.join div {
+  width: 80%;
+  margin: 5px auto;
+  display: flex;
+  flex-direction: column;
+
+  label,
+  input {
+    display: inline-block;
+    padding: 8px;
+  }
+  lable {
+    flex: 1;
+    text-align: center;
+  }
+  input {
+    flex: 3;
+  }
+}
