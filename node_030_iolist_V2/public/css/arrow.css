@@ -1,0 +1,18 @@
+.arrow {
+  border: solid rgba(0, 0, 0, 0.9);
+  border-width: 0 2px 2px 0;
+  padding: 3px;
+  display: inline-block;
+}
+.up {
+  transform: rotate(-135deg);
+}
+.down {
+  transform: rotate(45deg);
+}
+.left {
+  transform: rotate(135deg);
+}
+.right {
+  transform: rotate(-45deg);
+}

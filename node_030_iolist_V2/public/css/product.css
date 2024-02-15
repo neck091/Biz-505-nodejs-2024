@@ -164,3 +164,33 @@ div box가 포함하는 input tag등에 focus 가 설정되면 자신이 focus�
 input#p_image {
   display: none;
 }
+
+table.products {
+  /*
+  nth-of-type(), nth-of-child(), 에서 변수 n을 사용하면 
+  마치 for 문을 사용하는 것처럼 동작
+  ㅇㅅㅇ;;
+  n 의 값은 index의 연속된 값을 나타낸다.
+  n+5 만약 n이 5개면 n: 0 1 2 3 4 가되고 n + 5 : 5 6 7 8 9 의 값이 됨
+  결국 n+5를 사용하면 5번 요소부터 이후의 요소 모두에 적용 
+  
+  for (i= 0 ; i< lenth ; i++){
+  n = i+ 5
+  if(n>7) break;
+  }
+  
+  */
+
+  dtd td:nth-of-type(n + 5):nth-of-type(-n + 7) {
+    text-align: right;
+  }
+
+  span {
+    visibility: hidden;
+    padding-left: 20px;
+  }
+
+  span.sort {
+    visibility: visible;
+  }
+}

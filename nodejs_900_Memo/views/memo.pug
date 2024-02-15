@@ -1,0 +1,26 @@
+link(rel="stylesheet", href="/css/memo.css")
+
+section 
+    header 
+        h1 오늘은 내 생의 가장 젊은 날
+
+    article 
+        div.list
+            div.in
+                input(type="text" value=`${today}`)
+                input(type="text" value=`${time}`)
+                button
+                    a(href="/") 새로 작성
+
+            div.in
+                each item in MEMO
+                    div.br
+                        img(src="/images/symbol.png", alt="사진" width="80px" heigth="70px")
+                        span= item.m_memo
+        div.insert
+            form(method="post", enctype="multipart/form-data") 
+                input(type="text" name='m_author' placeholder="작성자 입력")
+                textarea(name="m_memo" placeholder="내용 입력") 
+                input(type="file" name="m_image" accept="image/*" id="m_image")
+                button(type="submit") 작성 
+footer copyRight &copy cjstk_05@naver.com

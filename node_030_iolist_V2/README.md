@@ -13,7 +13,7 @@
 ```bash
 
 npm install -g mysql2
-npm istall -g sequelize-auto
+npm install -g sequelize-auto
 
 sequelize-auto -o "./medels" -d edb -h localhost -u root -x '!Biz8080' -e mysql -l esm
 

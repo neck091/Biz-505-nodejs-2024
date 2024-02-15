@@ -1,0 +1,10 @@
+extends memo
+
+block contentm
+    div.insert
+        form(method="post",enctype="multipart/form-data") 
+            input(type="text" name="title" placeholder="제목입력" )
+            textarea(name="m_memo" placeholder="내용입력") 
+            input(type="text" name='m_author' placeholder="작성자 입력")
+            input(type="file" name="file")
+            button(type="submit") 작성 
