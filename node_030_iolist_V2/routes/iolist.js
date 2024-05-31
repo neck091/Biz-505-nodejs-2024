@@ -20,6 +20,18 @@ router.get("/", async (req, res) => {
   }
 });
 
+router.get("/:io_seq/detail", async (req, res) => {
+  const seq = req.params.io_seq;
+  const row = await IOLIST.findByPk(seq);
+  return res._construct.render("iolist/detail", { IO_ITEM: row });
+});
+
+router.get("/:io_seq/delete", async (req, res) => {
+  const seq = req.params.io_seq;
+  const row = await IOLIST.findByPk(seq);
+  return res._construct.render("iolist/detail", { IO_ITEM: row });
+});
+
 router.get("/insert", async (req, res) => {
   const user = req.session?.user;
   if (user) {

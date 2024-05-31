@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  head
+    title HanSpell Spell Checker
+  body
+    h1 HanSpell Spell Checker
+    form(action="/check", method="post")
+      textarea(name="text", rows="5", cols="50")
+      br
+      button(type="submit") Check Spell
